@@ -1,0 +1,16 @@
+{
+  "name": "jongharvey/mocha-router",
+  "description": "Mocha Framework - Router",
+  "authors": [
+    {
+      "name": "Jonathan Harvey",
+      "email": "jonathan.g.harvey@outlook.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Mocha\\": "Mocha/"
+    }
+  }
+}
