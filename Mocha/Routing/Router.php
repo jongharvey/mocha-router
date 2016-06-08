@@ -35,7 +35,9 @@ class Router {
 
 		// Get the action method
 		$action = self::cleanFragment(array_shift($parts), 'Index');
-		$method = strtolower($_SERVER['REQUEST_METHOD']);
+		$method = empty($_SERVER['REQUEST_METHOD'])
+			? 'cli'
+			: strtolower($_SERVER['REQUEST_METHOD']);
 
 		// Check for method + name
 		if (method_exists($controller, $full_method = "{$method}{$action}"))
